@@ -1,5 +1,4 @@
 import csv
-from extract_SO.extract_so import get_job_infos
 
 
 def save_as_csv_file(job_infos):
@@ -10,4 +9,4 @@ def save_as_csv_file(job_infos):
     for info in job_infos:
         csv_writer.writerow(info)
 
-    return
+    return "Scrapping done"

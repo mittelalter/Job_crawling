@@ -25,7 +25,7 @@ def extract_job_infos(pages):
 
     jobs = []
     for page in range(pages):
-        print(f"Scraping SO: {page+1}")
+        print(f"Scraping Stack over flow: {page+1}")
         response = requests.get(f"{URL}&pg={page+1}")
         soup = BeautifulSoup(response.text, "html.parser")
         company_infos = soup.select("div.dismissable-company")
